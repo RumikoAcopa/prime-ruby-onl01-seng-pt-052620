@@ -1,4 +1,4 @@
 require 'prime'# Add  code here!
 def Prime.prime?(integer)
-  returns
+  return false if integer !== true
 end
