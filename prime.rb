@@ -5,6 +5,7 @@ def Prime.prime?(integer)
    if integer == prime
      return true
    else return false
-end
-prime
+   end
+   prime
+  end
 end
