@@ -1,9 +1,12 @@
-require 'prime'
-def prime?(number)
-  (2..number/2).none? {|n| return false if number <= 0 || number % n == 0}
-end
-
-# Add  code here!
+def prime?(num)
+  if num < 0 or num == 0 or num == 1
+    return false
+  else
+    (2..num-1).to_a.all? do |possible_factor|
+       num % possible_factor != 0
+    end
+  end
+end# Add  code here!
 #def Prime.prime?(integer)
   #prime = 2,3,11,105557
 #  non-prime = -1,0,1,4,40,1763,101013
